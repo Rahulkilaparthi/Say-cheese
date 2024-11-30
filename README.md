@@ -1,15 +1,35 @@
-# SayCheese v1.0
-Take webcam shots from target just sending a malicious link
 
-![cheese](https://user-images.githubusercontent.com/34893261/56869077-e5714d80-69d1-11e9-8ce2-29a254021890.jpg)
+SayCheese v1.0
 
-# How it works?
-<p>The tool generates a malicious HTTPS page using Serveo or Ngrok Port Forwarding methods, and a javascript code to cam requests using MediaDevices.getUserMedia. </p>
+____________________________________________________________________________________________________________________________________________________________________
 
-<p>The MediaDevices.getUserMedia() method prompts the user for permission to use a media input which produces a MediaStream with tracks containing the requested types of media. That stream can include, for example, a video track (produced by either a hardware or virtual video source such as a camera, video recording device, screen sharing service, and so forth), an audio track (similarly, produced by a physical or virtual audio source like a microphone, A/D converter, or the like), and possibly other track types. </p>
+SayCheese is an open-source tool for ethical hacking and penetration testing. It allows users to generate phishing links to capture images from a target's camera with their consent for security assessment purposes. This tool should only be used in a legal and authorized manner.
 
-[See more about MediaDEvices.getUserMedia() here](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
-<p> To convince the target to grant permissions to access the cam, the page uses a javascript code made by https://github.com/wybiral that turns the favicon into a cam stream.</p>
+![56869077-e5714d80-69d1-11e9-8ce2-29a254021890](https://github.com/user-attachments/assets/1aaf03ed-624f-463a-861f-a5d4dc188d43)
+
+
+->>Features:
+
+Generates phishing links using Serveo.net or Ngrok for port forwarding.
+
+Captures images via the target's device camera.
+
+Logs IP addresses of connected devices.
+
+Lightweight and easy-to-use terminal interface.
+
+->>Requirements:
+
+A Linux-based operating system (e.g., Kali Linux, Ubuntu, etc.)
+
+PHP installed on your machine
+
+Internet connection
+
+Ngrok or Serveo.net for port forwarding
+
+->>Installation
+
 
 ## Installing (Kali Linux/Termux):
 
@@ -18,4 +38,35 @@ git clone https://github.com/thelinuxchoice/saycheese
 cd saycheese
 bash saycheese
 ```
+
+If using Ngrok, ensure it's installed and properly configured.
+Provide a subdomain if prompted.
+Share the generated phishing link with your test subject.
+Monitor the terminal for captured camera feeds and IP logs.
+
+->>Disclaimer:
+
+This tool is for educational and ethical purposes only. Unauthorized use of SayCheese to target individuals without explicit permission is illegal and may result in severe consequences. The developers are not responsible for any misuse.
+
+License
+This project is licensed under the MIT License.
+
+->>Acknowledgments:
+
+Created by @thelinuxchoice
+
+Inspired by the need for better security awareness and ethical hacking practices.
+
+Note: Tools like this should only be used responsibly and in compliance with all applicable laws. Unauthorized use is illegal and unethical.
+
+
+
+
+
+
+
+
+
+
+
 
